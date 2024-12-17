@@ -121,10 +121,10 @@ const Navbar = () => {
       </div>
       {/* Mobile Search Section */}
       {isSearchClick && (
-        <div className="fixed sm:hidden top-0 left-0 w-full h-full bg-white z-50">
+        <div className="fixed sm:hidden top-0 left-0 w-full h-full bg-white z-40">
           <div className="h-[60px] bg-brandblue flex w-full justify-between px-3 items-center">
             <div
-              className="w-4 h-full flex items-center"
+              className="w-4 h-full flex items-center z-50"
               onClick={() => setIsSearchClick()}
             >
               <NavChevronLeftIcon />
