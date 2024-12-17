@@ -1,0 +1,19 @@
+.fullCarouselSwiperContainer {
+  @apply min-w-full border-b;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply hidden sm:flex text-brandblue w-[40px] h-[40px] rounded-[50%] bg-[#E2E7EF];
+    &::after {
+      @apply scale-[0.3] text-[60px] font-bold;
+    }
+  }
+
+  .sliderContainer {
+    @apply px-[7.3729%] w-full h-full bg-secondary;
+  }
+
+  .swiper-pagination {
+    @apply hidden sm:block;
+  }
+}
