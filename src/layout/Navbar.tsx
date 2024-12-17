@@ -124,7 +124,7 @@ const Navbar = () => {
         <div className="fixed sm:hidden top-0 left-0 w-full h-full bg-white z-40">
           <div className="h-[60px] bg-brandblue flex w-full justify-between px-3 items-center">
             <div
-              className="w-4 h-full bg-black flex items-center relative z-50"
+              className="w-4 h-full flex items-center relative z-50"
               onClick={() => setIsSearchClick()}
             >
               <NavChevronLeftIcon />
