@@ -23,7 +23,7 @@ const Home = () => {
                 <li
                   className={`${
                     category.id === activeId && "activeBrandblue"
-                  } text-description cursor-pointer text-[10px] md:text-xs font-normal w-full py-2
+                  } text-description cursor-pointer text-sm font-normal w-full py-2
                  flex items-center justify-between hoverBrandblue`}
                   onClick={() => setActiveId(category.id)}
                 >
@@ -48,7 +48,7 @@ const Home = () => {
                     src={subCategory.image}
                     alt=""
                   />
-                  <span className="text-center text-[10px] md:text-xs ">
+                  <span className="text-center text-xs ">
                     {subCategory?.name}
                   </span>
                 </div>
