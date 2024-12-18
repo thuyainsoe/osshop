@@ -6,7 +6,7 @@ import ThereeRowDiscountCards from "./components/ThereeRowDiscountCards";
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col mt-[1px] gap-5 md:gap-8 pb-[70px]">
+    <div className="w-full flex flex-col mt-[1px] gap-5 md:gap-8 pb-5">
       <HeroSwiper />
       <ThereeRowDiscountCards />
       <CategorySection />
