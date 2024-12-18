@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white sticky top-0 z-[100]">
       {/* Top Section */}
       <div className="main-container bg-brandblue w-full hidden sm:flex md:flex-rwo items-center justify-between h-[45px] text-sm">
         <span>Welcome to our OsShoppy shop!</span>
@@ -53,16 +53,16 @@ const Navbar = () => {
               type="text"
               placeholder="What are you looking for"
               onFocus={() => setIsWebSearchFocus(true)}
-              onBlur={() => setIsWebSearchFocus(false)}
+              onBlur={() => {
+                setIsWebSearchFocus(false);
+                setSearchValue("");
+              }}
               value={searchValue}
               onChange={(e) => {
                 handleSearchValueChange(e);
               }}
             />
             <SearchIcon />
-            {isWebSearchFocus && (
-              <div className="fixed top-[120px] bg-black/50 h-full w-full left-0 z-20"></div>
-            )}
             {searchValue.length > 0 && (
               <div className="absolute bg-white w-full top-[45px] left-0 z-30 rounded-md shadow-sm p-2">
                 <div className="flex items-center gap-1">
@@ -79,7 +79,7 @@ const Navbar = () => {
           </div>
           <Button
             label="Login"
-            className="bg-brandpink text-white w-[70px] sm:w-[100px]"
+            className="bg-brandpink text-white w-[70px] sm:w-[100px] h-[40px]"
           />
           <div className="sm:hidden" onClick={() => setIsSearchClick()}>
             <SearchIcon />
@@ -139,6 +139,9 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      )}
+      {isWebSearchFocus && (
+        <div className="absolute top-[120px] bg-black/50 h-full min-h-[100vh] w-full left-0 z-20"></div>
       )}
     </div>
   );

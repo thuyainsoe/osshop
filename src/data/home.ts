@@ -329,3 +329,87 @@ export const categories = [
     ],
   },
 ];
+
+export const recommendedItems = [
+  {
+    image: "https://via.placeholder.com/300x200.png?text=Leather+Backpack",
+    name: "Vintage Leather Backpack",
+    description:
+      "Handcrafted leather backpack with a rustic finish and spacious compartments.",
+    price: "$79.99",
+    discount: "10% off",
+  },
+  {
+    image:
+      "https://via.placeholder.com/300x200.png?text=Noise+Cancelling+Headphones",
+    name: "Wireless Noise-Cancelling Headphones",
+    description:
+      "Experience the next level of silence with these premium noise-cancelling headphones.",
+    price: "$199.99",
+    discount: "15% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=Fitness+Tracker",
+    name: "Smart Fitness Tracker",
+    description:
+      "Track your health, steps, and sleep patterns with this sleek and stylish fitness tracker.",
+    price: "$49.99",
+    discount: "20% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=4K+Smart+TV",
+    name: "Ultra HD 4K Smart TV",
+    description:
+      "Crystal clear picture and smart features packed into a stunning 55-inch 4K display.",
+    price: "$699.99",
+    discount: "25% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=Standing+Desk",
+    name: "Electric Standing Desk",
+    description:
+      "Adjustable standing desk with memory presets to boost productivity and comfort.",
+    price: "$329.99",
+    discount: "12% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=RGB+Gaming+Mouse",
+    name: "Gaming Mouse RGB",
+    description:
+      "Customizable RGB gaming mouse with precision tracking and ultra-low latency.",
+    price: "$39.99",
+    discount: "18% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=Steel+Water+Bottle",
+    name: "Stainless Steel Water Bottle",
+    description:
+      "Insulated water bottle that keeps your drinks cold for 24 hours and hot for 12 hours.",
+    price: "$24.99",
+    discount: "8% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=Desk+Lamp",
+    name: "Minimalist Desk Lamp",
+    description:
+      "Modern desk lamp with touch controls, adjustable brightness, and a sleek design.",
+    price: "$59.99",
+    discount: "22% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=Sleep+Mask",
+    name: "Noise-Cancelling Sleep Mask",
+    description:
+      "Comfortable sleep mask with built-in noise-cancelling technology for a restful sleep.",
+    price: "$29.99",
+    discount: "5% off",
+  },
+  {
+    image: "https://via.placeholder.com/300x200.png?text=Wireless+Charging+Pad",
+    name: "Wireless Charging Pad",
+    description:
+      "Fast wireless charging pad compatible with iPhone, Samsung, and other devices.",
+    price: "$19.99",
+    discount: "30% off",
+  },
+];

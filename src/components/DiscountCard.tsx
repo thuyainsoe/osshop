@@ -22,7 +22,10 @@ const DiscountCard = ({
       <div className="flex flex-col items-start justify-center gap-3">
         <span className="text-3xl font-bold">{discountAmount}</span>
         <span>{descriptionLabel}</span>
-        <Button label="Shop Now" className={`${btnBg} w-fit text-white`} />
+        <Button
+          label="Shop Now"
+          className={`${btnBg} w-fit text-white Buttonh-[40px]`}
+        />
       </div>
       <div className="w-full h-full overflow-hidden ml-auto">
         <img

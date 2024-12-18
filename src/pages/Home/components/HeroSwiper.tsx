@@ -32,7 +32,7 @@ const HeroSwiper = () => {
                 <p className="text-description text-base">{item.description}</p>
                 <Button
                   label={item.buttonText}
-                  className="w-fit bg-brandpink text-white"
+                  className="w-fit bg-brandpink text-white h-[40px]"
                 ></Button>
               </div>
               <div className="col-span-1 ml-auto">
