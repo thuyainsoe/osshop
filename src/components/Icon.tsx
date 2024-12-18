@@ -95,10 +95,13 @@ export const NavCommentIcon: FC<unknown> = () => {
     </svg>
   );
 };
-export const NavChevronLeftIcon: FC<unknown> = () => {
+export const NavChevronLeftIcon: FC<{ color: string; width: string }> = ({
+  color = "white",
+  width = "10",
+}) => {
   return (
     <svg
-      width="11"
+      width={width}
       height="17"
       viewBox="0 0 11 17"
       fill="none"
@@ -106,7 +109,7 @@ export const NavChevronLeftIcon: FC<unknown> = () => {
     >
       <path
         d="M1.08837 7.90342L7.92099 1.07116C8.2504 0.741743 8.78477 0.741743 9.11419 1.07116L9.91118 1.86815C10.2402 2.19721 10.2406 2.73018 9.91259 3.05995L4.49747 8.50002L9.91224 13.9405C10.2406 14.2702 10.2399 14.8032 9.91083 15.1323L9.11384 15.9292C8.78442 16.2587 8.25005 16.2587 7.92063 15.9292L1.08837 9.09663C0.758955 8.76721 0.758955 8.23284 1.08837 7.90342Z"
-        fill="#fff"
+        fill={color}
       />
     </svg>
   );

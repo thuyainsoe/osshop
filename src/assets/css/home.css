@@ -17,3 +17,19 @@
     @apply hidden sm:block;
   }
 }
+
+.hoverBrandblue {
+  &:hover {
+    @apply text-brandblue transition-all duration-150;
+    path {
+      @apply fill-brandblue transition-all duration-150;
+    }
+  }
+}
+
+.activeBrandblue {
+  @apply !text-brandblue !font-medium;
+  path {
+    @apply fill-brandblue transition-all duration-150;
+  }
+}
