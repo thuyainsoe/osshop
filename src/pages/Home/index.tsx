@@ -7,7 +7,7 @@ import { recommendedItems } from "@/data/home";
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col mt-[1px] gap-5 mb-[200px]">
+    <div className="w-full flex flex-col mt-[1px] gap-5">
       <HeroSwiper />
       <ThereeRowDiscountCards />
       <CategorySection />
