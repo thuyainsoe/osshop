@@ -2,7 +2,7 @@ import { categories } from "@/data/home";
 import HeroSwiper from "./components/HeroSwiper";
 import ThereeRowDiscountCards from "./components/ThereeRowDiscountCards";
 import { NavChevronLeftIcon } from "@/components/Icon";
-import { act, useState } from "react";
+import { useState } from "react";
 
 const Home = () => {
   const [activeId, setActiveId] = useState(1);

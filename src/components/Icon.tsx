@@ -95,7 +95,7 @@ export const NavCommentIcon: FC<unknown> = () => {
     </svg>
   );
 };
-export const NavChevronLeftIcon: FC<{ color: string; width: string }> = ({
+export const NavChevronLeftIcon: FC<{ color?: string; width?: string }> = ({
   color = "white",
   width = "10",
 }) => {
