@@ -31,5 +31,5 @@ body {
 }
 
 .main-container {
-  @apply px-[20px] md:px-[4%] lg:px-[9.0278%];
+  @apply px-[10px] sm:px-[20px] md:px-[4%] lg:px-[9.0278%];
 }
