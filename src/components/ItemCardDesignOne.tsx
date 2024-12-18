@@ -1,20 +1,13 @@
 import { HeartIcon } from "@/components/Icon";
+import { useNavigate } from "react-router-dom";
 
 type ItemCardDesignOneProps = {
-  image: string;
-  name: string;
-  description: string;
-  price: string;
-  discount: string;
+  item: any;
 };
 
-const ItemCardDesignOne = ({
-  image,
-  name,
-  description,
-  price,
-  discount,
-}: ItemCardDesignOneProps) => {
+const ItemCardDesignOne = ({ item }: ItemCardDesignOneProps) => {
+  const { image, name, description, price, discount, route } = item;
+  const navigate = useNavigate();
   return (
     <div className="w-full bg-white shadow-md rounded-md overflow-hidden">
       <img src={image} alt="" className="w-full aspect-square object-cover" />
@@ -22,7 +15,12 @@ const ItemCardDesignOne = ({
         <span className="w-fit text-xs h-[20px] flex items-center uppercase bg-brandpink px-1 rounded-sm">
           {discount}
         </span>
-        <span className="text-base md:text-lg font-medium text-heading line-clamp-1">
+        <span
+          className="text-base md:text-lg font-medium text-heading line-clamp-1 cursor-pointer"
+          onClick={() => {
+            navigate(route);
+          }}
+        >
           {name}
         </span>
         <span className="text-sm text-heading/50 line-clamp-2">

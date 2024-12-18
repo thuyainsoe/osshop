@@ -1,0 +1,9 @@
+.detailSwiper {
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply hidden sm:flex text-black;
+    &::after {
+      @apply scale-[0.3] text-[60px] font-bold;
+    }
+  }
+}

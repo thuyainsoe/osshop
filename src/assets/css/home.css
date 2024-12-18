@@ -5,7 +5,7 @@
   .swiper-button-prev {
     @apply hidden sm:flex text-brandblue w-[40px] h-[40px] rounded-[50%] bg-[#E2E7EF];
     &::after {
-      @apply scale-[0.3] text-[60px] font-bold;
+      @apply scale-[0.5] text-[60px] font-bold;
     }
   }
 

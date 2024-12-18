@@ -10,6 +10,7 @@ import {
 } from "@/components/Icon";
 import useNavbarStore from "@/store/navbarStore";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { isSearchClick, setIsSearchClick } = useNavbarStore();
@@ -31,7 +32,9 @@ const Navbar = () => {
       <div className="main-container bg-brandblue w-full hidden sm:flex md:flex-rwo items-center justify-between h-[45px] text-sm">
         <span>Welcome to our OsShoppy shop!</span>
         <ul className="flex items-center gap-4">
-          <li>Home</li>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
           <li>New Arrivals</li>
           <li>About Us</li>
           <li>Contact Us</li>
@@ -94,7 +97,9 @@ const Navbar = () => {
             <div className="w-5 min-h-5">
               <NavHomeIcon />
             </div>
-            <span className="text-xs">Home</span>
+            <Link to={"/"} className="text-xs">
+              Home
+            </Link>
           </li>
           {/* Arrival */}
           <li className="flex flex-col justify-center items-center gap-1">
