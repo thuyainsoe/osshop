@@ -3,6 +3,7 @@ import { ChevronDownIcon } from "@/components/Icon";
 import RatingSection from "./RatingSection";
 import { reviews } from "@/data/fashion-detail";
 import ReviewCard from "@/components/ReviewCard";
+import ReviewTextbox from "./ReviewTextbox";
 // import Button from "@/components/Button";
 
 const ProductReview = () => {
@@ -12,6 +13,7 @@ const ProductReview = () => {
       <h5 className="text-lg text-heading">Product Review</h5>
       <div className="mt-2 w-full">
         <RatingSection />
+        <ReviewTextbox />
         {/* buttons */}
         <div className="w-full flex items-center mb-5 mt-7 gap-2">
           <div className="h-[30px] w-fit px-3 bg-white border rounded-md text-heading flex items-center gap-5 cursor-pointer text-sm">
